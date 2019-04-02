@@ -6,12 +6,12 @@
 """
 from io import open
 from setuptools import setup
-from sphinx_pangeo_theme import __version__
-
+import versioneer
 
 setup(
     name='sphinx_pangeo_theme',
-    version=__version__,
+    version=versioneer.get_version(),
+    cmdclass=versioneer.get_cmdclass(),
     url='https://github.com/pangeo-data/sphinx_pangeo_theme/',
     license='MIT',
     author='Ryan Abernathey',
