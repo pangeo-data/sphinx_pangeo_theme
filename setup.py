@@ -1,37 +1,36 @@
 # -*- coding: utf-8 -*-
-"""`sphinx_rtd_theme` lives on `Github`_.
+"""`sphinx_pangeo_theme` lives on `Github`_.
 
-.. _github: https://github.com/rtfd/sphinx_rtd_theme
+.. _github: https://github.com/rtfd/sphinx_pangeo_theme
 
 """
 from io import open
 from setuptools import setup
-from sphinx_rtd_theme import __version__
+from sphinx_pangeo_theme import __version__
 
 
 setup(
-    name='sphinx_rtd_theme',
+    name='sphinx_pangeo_theme',
     version=__version__,
-    url='https://github.com/rtfd/sphinx_rtd_theme/',
+    url='https://github.com/pangeo-data/sphinx_pangeo_theme/',
     license='MIT',
-    author='Dave Snider, Read the Docs, Inc. & contributors',
-    author_email='dev@readthedocs.org',
-    description='Read the Docs theme for Sphinx',
+    author='Ryan Abernathey',
+    author_email='rpa@ldeo.columbia.edu',
+    description='Pangeo theme for Sphinx',
     long_description=open('README.rst', encoding='utf-8').read(),
     zip_safe=False,
-    packages=['sphinx_rtd_theme'],
-    package_data={'sphinx_rtd_theme': [
+    packages=['sphinx_pangeo_theme'],
+    package_data={'sphinx_pangeo_theme': [
         'theme.conf',
         '*.html',
-        'static/css/*.css',
-        'static/js/*.js',
-        'static/fonts/*.*'
+        'static/*.css',
+        'static/*.otf'
     ]},
     include_package_data=True,
     # See http://www.sphinx-doc.org/en/stable/theming.html#distribute-your-theme-as-a-python-package
     entry_points = {
         'sphinx.html_themes': [
-            'sphinx_rtd_theme = sphinx_rtd_theme',
+            'sphinx_pangeo_theme = sphinx_pangeo_theme',
         ]
     },
     install_requires=[
