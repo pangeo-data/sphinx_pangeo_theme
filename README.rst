@@ -1,2 +1,0 @@
-Sphinx Pangeo Theme
-===================

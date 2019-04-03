@@ -17,7 +17,8 @@ setup(
     author='Ryan Abernathey',
     author_email='rpa@ldeo.columbia.edu',
     description='Pangeo theme for Sphinx',
-    long_description=open('README.rst', encoding='utf-8').read(),
+    long_description=open('README.md', encoding='utf-8').read(),
+    long_description_content_type='text/markdown',
     zip_safe=False,
     packages=['sphinx_pangeo_theme'],
     package_data={'sphinx_pangeo_theme': [
