@@ -24,13 +24,14 @@ setup(
         'theme.conf',
         '*.html',
         'static/*.css',
-        'static/*.otf'
+        'static/*.otf',
+        'static/*.png'
     ]},
     include_package_data=True,
     # See http://www.sphinx-doc.org/en/stable/theming.html#distribute-your-theme-as-a-python-package
     entry_points = {
         'sphinx.html_themes': [
-            'sphinx_pangeo_theme = sphinx_pangeo_theme',
+            'pangeo = sphinx_pangeo_theme',
         ]
     },
     install_requires=[
